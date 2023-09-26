@@ -1,0 +1,125 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+.nav-container{
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-color: rgb(0, 0, 0);
+padding:  15px 30px;
+width: 100%;
+
+
+}
+.logo{
+    color:red;
+    padding: 0 20px;
+
+}
+.menu-container{
+display: flex;
+list-style: none;
+align-items: center;
+gap: 50px;
+
+
+}
+.menu-container li a{
+    color: rgba(216, 211, 211, 0.866);
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+ font-size: 18px;
+}
+
+.color-black{
+    font-family: 'Josefin Sans', sans-serif;
+    color: rgba(216, 211, 211, 0.866);
+    font-size: 25px;
+}
+.folio{
+font-size: 24px;
+font-family: 'Josefin Sans', sans-serif;
+}
+.menu-container  li a:hover{
+border-color:  rgba(216, 211, 211, 0.866);
+border-radius: 2px;
+padding-bottom: 2px;
+border-bottom-style: solid;
+border-bottom-width: 3.5px;
+width: fit-content;
+color:red;
+}
+.mobile-cotainer{
+    top:0px;
+    position:fixed;
+    z-index: 999999;
+display: flex;
+flex-direction: column;
+    width: 100%;
+    overflow-x: hidden;
+    transition: all 0.3s;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    font-size: 30px;
+    list-style: none;
+    background-color: black;
+   
+    
+}
+.mobile-cotainer1{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    
+ 
+}
+
+.icon-container{
+    display: flex;
+    justify-content: flex-end;
+    padding:  20px 30px;
+   
+}
+
+.icon-container svg{
+    color: rgba(216, 211, 211, 0.866);
+    width: 30px;
+    height: 30px;
+}
+.display{
+    display: none;
+}
+.mobile-menu-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+   
+    padding:  20px 30px;
+}
+.mobile-cotainer li a{
+    color: rgba(216, 211, 211, 0.866);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+@media (max-width:600px) {
+   .menu-container{
+    display: none;
+   }
+   .mobile-cotainer1{
+    display: flex;
+   }
+   .icon-container{
+    display:flex ;
+   }
+   .nav-container{
+ padding: 0px;
+   }
+}
